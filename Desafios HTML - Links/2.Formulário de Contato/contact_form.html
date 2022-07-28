@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+</head>
+<form id="contactForm" action=""></form>
+<body>
+    <fieldset form="contactForm">
+        <legend><b>Entre em contato</b></legend><br>
+        <label for="subject"><b>Assunto</b></label>
+        <select name="subject" id="selectSubject" >
+            <option value="">Selecione o assunto</option>
+            <option value="accountOpening">Abertura de Conta</option>
+            <option value="accountValidation">Validação de Conta</option>
+            <option value="deviceAuthorization">Autorizar Dispositivo</option>
+            <option value="anotherSubjects">Outros Assuntos</option>
+        </select><br><br>
+        <div>
+            <label for="name"><b>Nome Completo:</b></label><br>
+            <input type="text" placeholder="Seu nome"><br><br>
+        </div>
+        <div>
+            <label for="email"><b>E-mail:</b></label><br>
+            <input id="email" type="email" name="email" placeholder="email@seudominio.com"><br><br>
+        </div>
+        <div>
+            <label for="message"><b>Mensagem:</b></label><br>
+            <textarea name="message" id="message" cols="30" rows="10" maxlength="300" placeholder="Descreva para nós o problema (até 300 caracteres)"></textarea><br><br>
+        </div>
+        <div>
+            <input type="checkbox" id="acceptNews" name="acceptNews" value="acceptNews">
+            <label for="acceptNews">Aceito receber novidades por email</label><br><br>
+        </div>
+        <button autofocus type="submit" name="buttonSend" value="send">Enviar</button>
+    </fieldset>
+</body>
+</html>
